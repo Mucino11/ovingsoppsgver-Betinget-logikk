@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="utskrift"></p>
+    <script>
+      const name = "Musa";
+      let utskrift;
+
+      if (name === "Musa") {
+        utskrift = "Mitt navn er " + name + " Jalloh";
+        console.log(utskrift);
+      }
+      if (name == !"Musa Jalloh") {
+        utskrift = "Jeg heter ikke " + name + " Jalloh";
+      }
+
+      document.getElementById("utskrift").innerHTML = utskrift;
+    </script>
+  </body>
+</html>
