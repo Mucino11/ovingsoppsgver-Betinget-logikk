@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="utskrift"></p>
+    <script>
+      const barn_1 = "Jenter";
+      const barn_2 = "Gutter";
+      const barn_3 = "Gutter";
+
+      let antall_gutter = 0;
+      let antall_jenter = 0;
+
+      if (barn_1 === "Jenter") {
+        antall_jenter += 1;
+      } else {
+        antall_gutter += 1;
+      }
+
+      if (barn_2 === "Jenter") {
+        antall_jenter += 1;
+      } else {
+        antall_gutter += 1;
+      }
+      if (barn_3 === "Jenter") {
+        antall_jenter += 1;
+      } else {
+        antall_gutter += 1;
+      }
+
+      utskrift = "Gutter: " + antall_gutter + ", Jenter " + antall_jenter;
+      document.getElementById("utskrift").innerHTML = utskrift;
+    </script>
+  </body>
+</html>
