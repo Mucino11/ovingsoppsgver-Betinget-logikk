@@ -7,11 +7,22 @@
   </head>
   <body>
     <p id="utskrift"></p>
-    <script>
-      const ITF19019 = "A";
-      const ITF10511 = "F";
-      const ITF19019_passed = ITF19019_grade === "F" ? true : false;
-      const ITF10511_passed = ITF10511_grade === "F" ? true : false;
-    </script>
-  </body>
+<script>
+    const ITF19019_grade = "A"; // Corrected variable name
+    const ITF10511_grade = "F"; // Corrected variable name
+    const ITF19019_passed = ITF19019_grade === "F" ? true : false;
+    const ITF10511_passed = ITF10511_grade === "F" ? true : false;
+
+    let countPassed = 0;
+
+    if (ITF19019_passed === true) {
+        countPassed += 1;
+    }
+    if (ITF10511_passed === true) {
+        countPassed += 1;
+    }
+    const printText = `Du har bestått ${countPassed} av 2 kurs`;
+    document.getElementById("utskrift").innerHTML = printText;
+</script>
+
 </html>
